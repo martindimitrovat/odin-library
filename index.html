@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
-    <title>Odin Library</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="main.js" defer></script>
+  <title>Odin Library</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+  <div class="container">
+    <header>
+      <nav>
+        <span class="heading-sm">Odin Library</span>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="library-header">
+          <h1 class="display-md">My Library</h1>
+          <button class="primary-btn label-md">Add book</button>
+        </div>
+        <div id="library-list">
+          <table>
+            <thead>
+              <tr>
+                <th class="label-md">Title</th>
+                <th class="label-md">Author</th>
+                <th class="label-md">Pages</th>
+                <th class="label-md">Read</th>
+              </tr>
+            </thead>
+            <tbody id="library-body">
+              <tr>
+                <td>The Millionaire Fastlane</td>
+                <td>MJ DeMarco</td>
+                <td>400</td>
+                <td><input type="checkbox" /><label></label></td>
+                <td><button class="secondary-btn label-sm">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <p><small>&copy; <span id="year"></span> Martin Dimitrov. All rights reserved.</small></p>
+    </footer>
+  </div>
+
+  <script>
+    // Execute after parsing
+    document.addEventListener('DOMContentLoaded', () => {
+      const year = document.getElementById('year');
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
 </body>
+
 </html>

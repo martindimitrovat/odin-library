@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_opsz\,wght.ttf") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html {
+    font-family: Inter;
+    height: 100%:
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 24px;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 64px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+footer {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+#library-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#library-list {
+    overflow-y: auto;
+}
+
+/* Typography */
+
+.display-md {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.heading-sm {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.label-md {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.label-sm {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Buttons */
+
+.primary-btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.primary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    /* Bright overlay effect */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.primary-btn:hover::before {
+    opacity: 1;
+}
+
+.secondary-btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.04);
+    /* Bright overlay effect */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.secondary-btn:hover::before {
+    opacity: 1;
+}
+
+/* Input */
+
+/* Check */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: black;
+}
