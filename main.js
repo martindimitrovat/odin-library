@@ -9,61 +9,6 @@ const library = [
         author: "MJ DeMarco",
         pages: 400,
     },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
-    {
-        title: "Unscripted",
-        author: "MJ DeMarco",
-        pages: 400,
-    },
 ];
 
 function Book(title, author, pages, read) {
